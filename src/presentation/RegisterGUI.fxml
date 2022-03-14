@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="317.0" prefWidth="248.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.RegisterController">
+   <children>
+      <Pane prefHeight="346.0" prefWidth="248.0">
+         <children>
+            <TextField fx:id="usernameTF" layoutX="39.0" layoutY="47.0" promptText="username" />
+            <TextField fx:id="passwordTF" layoutX="39.0" layoutY="86.0" promptText="password" />
+            <TextField layoutX="39.0" layoutY="124.0" promptText="complete name" />
+            <TextField layoutX="39.0" layoutY="166.0" promptText="mail" />
+            <TextField layoutX="39.0" layoutY="206.0" promptText="phone" />
+            <Button layoutX="83.0" layoutY="272.0" mnemonicParsing="false" onAction="#register" text="Register" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

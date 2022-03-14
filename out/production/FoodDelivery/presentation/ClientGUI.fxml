@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.ClientController">
+   <children>
+      <Pane prefHeight="720.0" prefWidth="1011.0">
+         <children>
+            <ListView fx:id="listView" layoutX="14.0" layoutY="48.0" onMouseClicked="#clickOnTableRow" prefHeight="363.0" prefWidth="575.0" />
+            <Label layoutX="278.0" layoutY="14.0" text="Products" />
+            <Button layoutX="494.0" layoutY="10.0" mnemonicParsing="false" onAction="#refreshTable" text="Show Products" />
+            <ListView fx:id="cartView" layoutX="257.0" layoutY="469.0" prefHeight="200.0" prefWidth="332.0" />
+            <Label layoutX="412.0" layoutY="437.0" text="Cart" />
+            <Label layoutX="257.0" layoutY="677.0" text="Price:" />
+            <Label fx:id="costLabel" layoutX="298.0" layoutY="677.0" text="0" />
+            <Button layoutX="511.0" layoutY="682.0" mnemonicParsing="false" onAction="#placeOrder" text="Place Order" />
+            <TextField fx:id="nameTF" layoutX="648.0" layoutY="48.0" />
+            <TextField fx:id="rankingTF" layoutX="648.0" layoutY="99.0" />
+            <TextField fx:id="macrosOrPriceTF" layoutX="648.0" layoutY="145.0" />
+            <Button layoutX="821.0" layoutY="48.0" mnemonicParsing="false" onAction="#searchForName" text="Search For Name" />
+            <Button layoutX="821.0" layoutY="99.0" mnemonicParsing="false" onAction="#searchForRating" text="Search For Rating" />
+            <Button layoutX="821.0" layoutY="145.0" mnemonicParsing="false" onAction="#searchMacrosOrPrice" text="Search For Macros Or Price" />
+            <Button layoutX="30.0" layoutY="469.0" mnemonicParsing="false" onAction="#addToCart" text="Add to cart" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

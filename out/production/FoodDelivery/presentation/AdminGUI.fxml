@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="579.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.AdminController">
+   <children>
+      <Pane prefHeight="617.0" prefWidth="1280.0">
+         <children>
+            <Button fx:id="refreshTableButton" layoutX="394.0" layoutY="34.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="47.0" prefWidth="98.0" text="Refresh Table" />
+            <TextField fx:id="nameTF" layoutX="369.0" layoutY="115.0" promptText="Name" />
+            <TextField fx:id="ratingTF" layoutX="369.0" layoutY="152.0" promptText="Rating" />
+            <TextField fx:id="caloriesTF" layoutX="369.0" layoutY="188.0" promptText="Calories" />
+            <TextField fx:id="proteinsTF" layoutX="369.0" layoutY="225.0" promptText="Proteins" />
+            <TextField fx:id="fatTF" layoutX="369.0" layoutY="264.0" promptText="Fat" />
+            <TextField fx:id="sodiumTF" layoutX="369.0" layoutY="302.0" promptText="Sodium" />
+            <TextField fx:id="priceTF" layoutX="369.0" layoutY="343.0" promptText="Price" />
+            <Button fx:id="addButton" layoutX="369.0" layoutY="390.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="67.0" text="Add" />
+            <Button fx:id="deleteButton" layoutX="383.0" layoutY="470.0" mnemonicParsing="false" onAction="#delete" prefHeight="39.0" prefWidth="120.0" text="Delete Selected" />
+            <TextField fx:id="compNameTF" layoutX="36.0" layoutY="34.0" promptText="Name" />
+            <TextArea fx:id="compProductsTF" layoutX="36.0" layoutY="77.0" prefHeight="104.0" prefWidth="214.0" promptText="Here are the base products that forms the new product" />
+            <Button layoutX="198.0" layoutY="34.0" mnemonicParsing="false" onAction="#createComposite" text="Create" />
+            <Button fx:id="compositeProductsButton" layoutX="36.0" layoutY="213.0" mnemonicParsing="false" onAction="#refreshComposite" text="Composite Products" />
+            <ListView fx:id="compView" layoutX="36.0" layoutY="256.0" prefHeight="200.0" prefWidth="200.0" />
+            <ListView fx:id="listView" layoutX="567.0" layoutY="29.0" onMouseClicked="#clickOnTableRow" prefHeight="553.0" prefWidth="663.0" />
+            <Button fx:id="updateButton" layoutX="443.0" layoutY="390.0" mnemonicParsing="false" onAction="#modify" prefHeight="25.0" prefWidth="67.0" text="Update" />
+            <Button layoutX="36.0" layoutY="509.0" mnemonicParsing="false" onAction="#generateReports" text="Generate Reports" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
